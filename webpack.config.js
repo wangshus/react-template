@@ -10,8 +10,8 @@ module.exports = {
         // a: "./src/index.js"
     },
     resolve: {
-        extensions: ['','.ts', '.js', '.es6', '.jsx', '.tsx'],
-        alias:{
+        extensions: ['', '.ts', '.js', '.es6', '.jsx', '.tsx'],
+        alias: {
             "@src": path.resolve(__dirname, "./src"),
             "src": path.resolve(__dirname, "./src")
         }
@@ -49,28 +49,20 @@ module.exports = {
                 test: /\.(js|ts)x?$/,
                 exclude: /(node_modules|bower_components)/,
                 use: {
-                    loader: 'babel-loader',
-                    options: {
-                        "presets": [
-                            "@babel/preset-env",
-                            "@babel/preset-react"
-                        ],
-                    }
+                    loader: 'babel-loader'
                 }
             },
             {
-                test: /\.(css|scss|sass)$/,
+                test: /\.(css|scss|sass|scss)$/,
                 use: [
                     "style-loader",
                     "css-loader",
-                    "postcss-loader",
                     "sass-loader",
                 ]
             },
             {
                 test: /\.(svg|woff|eot|ttf)$/i,
-                use: ['file-loader'
-                ],
+                use: ['file-loader'],
             },
             {
                 test: /\.(png|jpg|gif)$/i,

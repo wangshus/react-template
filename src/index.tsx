@@ -5,7 +5,9 @@ import { ConnectedRouter } from "connected-react-router";
 import Routes from "./Routes";
 import { history, store } from "./store";
 import Footer from "./components/common/Footer";
-
+import style from "./components/common/common.scss";
+import classnames from "classnames/bind";
+classnames.bind(style);
 
 ReactDOM.render(
     <Provider store={store}>

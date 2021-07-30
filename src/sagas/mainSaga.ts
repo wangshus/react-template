@@ -3,7 +3,7 @@ import { MAINACTIONSLIST } from "src/actions/mianActions";
 
 
 function* changeValue() {
-    console.log(11111111);
+    console.log("enter saga");
     
 }
 

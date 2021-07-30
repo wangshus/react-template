@@ -7,4 +7,4 @@ export const MAINACTIONSLIST = {
 }
 
 
-export const valueChange = (data: any) => action(MAINACTIONSLIST.VALUE_CHANGE, data);
+export const valueChange = (data: string) => action(MAINACTIONSLIST.VALUE_CHANGE, data);
